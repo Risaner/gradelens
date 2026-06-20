@@ -1,4 +1,4 @@
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 from typing import Dict, List, Optional
 from abc import ABC, abstractmethod
 
@@ -15,7 +15,7 @@ class Essay:
     strategy: str
     word_count: int
     manual_score: Optional[float] = None
-    tags: List[str] = None
+    tags: List[str] = field(default_factory=list)
 
     def __post_init__(self):
         if self.tags is None:

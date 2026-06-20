@@ -1,30 +1,22 @@
-﻿# 贡献指南
+# Contributing
 
-## 如何贡献
+Welcome to AES-Bench!
 
-1. **报告问题** — 发现 bug 或有建议？创建 Issue。
-2. **提交 PR** — Fork 仓库，创建功能分支，提交 PR。
-3. **改进文档** — 修复错别字、补充示例、翻译都欢迎。
+## How to Contribute
 
-## 代码规范
+### 1. Add a New Scorer
+Create a file in scorers/, inherit core.base.Scorer, implement score(essay) -> dict, then register in core.scorer_registry.
 
-- Python: 遵循 [PEP 8](https://peps.python.org/pep-0008/)
-- 提交信息: [Conventional Commits](https://www.conventionalcommits.org/)
-  - eat:、ix:、docs:、efactor:、	est:、chore:
+### 2. Submit Real Human Scores
+The bundled reference scores are AI-generated for demo only. Real human scores welcome via PR.
 
-## Issues
+### 3. Improve Evaluation Metrics
+Add new methods in core/evaluator.py.
 
-- 使用 Issue 模板
-- 标签：ug、enhancement、documentation、good first issue
+## Dev Setup
 
-## Pull Requests
-
-1. Fork 并克隆
-2. 创建分支：git checkout -b feat/你的功能
-3. 提交：git commit -m "feat: 描述"
-4. 推送：git push origin feat/你的功能
-5. 提交 PR，描述改动内容
-
-## 许可证
-
-贡献即表示同意你的贡献以 MIT 许可证发布。
+`
+pip install -r requirements.txt
+pip install pytest
+python -m pytest tests/ -v
+`

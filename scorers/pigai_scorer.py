@@ -1,4 +1,4 @@
-﻿import requests
+import requests
 from core.base import Scorer, Essay
 from typing import Dict, List
 

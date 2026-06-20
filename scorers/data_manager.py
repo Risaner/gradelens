@@ -1,4 +1,4 @@
-﻿"""
+"""
 数据管理器：加载作文、保存评分结果
 """
 import json
@@ -22,7 +22,7 @@ def load_essays(data_dir: str = "data") -> List[Essay]:
 def load_manual_scores(data_dir: str = "data") -> Dict[str, Dict]:
     scores = {}
     for f in sorted(Path(data_dir).glob("manual_scores_batch*.json")):
-        with open(f, "r", encoding="utf-8") as fh:
+        with open(f, "r", encoding="utf-8-sig") as fh:
             batch = json.load(fh)
         for entry in batch["essays"]:
             scores[entry["id"]] = entry

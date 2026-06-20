@@ -1,38 +1,39 @@
-﻿[build-system]
-requires = [""setuptools>=61.0""]
-build-backend = ""setuptools.build_meta""
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = ""aes-bench""
-version = ""1.0.0""
-description = ""AI-Generated Essay Benchmark — Measuring Agent vs. AI scoring bias on CET-4/6 English essays""
-readme = ""README.md""
-license = {text = ""MIT""}
-requires-python = "">=3.10""
+name = "aes-bench"
+version = "1.0.0"
+description = "AI-Generated Essay Benchmark — Measuring Agent vs. AI scoring bias on CET-4/6 English essays"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
 authors = [
-    {name = ""Risaner"", email = ""qinglinzhong459@gmail.com""},
+    {name = "Risaner", email = "qinglinzhong459@gmail.com"},
 ]
 classifiers = [
-    ""License :: OSI Approved :: MIT License"",
-    ""Programming Language :: Python :: 3"",
-    ""Programming Language :: Python :: 3.10"",
-    ""Programming Language :: Python :: 3.11"",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
 ]
 dependencies = [
-    ""requests>=2.31.0"",
-    ""pandas>=2.0.0"",
-    ""matplotlib>=3.7.0"",
-    ""seaborn>=0.12.0"",
-    ""tqdm>=4.65.0"",
+    "requests>=2.31.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "tqdm>=4.65.0",
+    "openai>=1.0.0",
 ]
 
 [project.optional-dependencies]
 dev = [
-    ""pytest>=7.0"",
+    "pytest>=7.0",
 ]
 
 [project.scripts]
-aes-bench = ""aes_bench.cli:main""
+aes-bench = "cli:main"
 
 [tool.setuptools.packages.find]
-include = [""core*""]
+include = ["core*", "scorers*", "scripts*"]

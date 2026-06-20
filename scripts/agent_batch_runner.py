@@ -1,4 +1,4 @@
-﻿"""
+"""
 Agent Batch Runner
 批量调用 AgentScorer 对作文评分
 """

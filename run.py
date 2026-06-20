@@ -45,7 +45,7 @@ def run_all(output_dir=None, provider="deepseek"):
     for i, essay in enumerate(essays):
         print(f"[{i+1}/{len(essays)}] {essay.id} ({essay.strategy}/{essay.difficulty})...", end=" ")
         
-        score = scorer.score(
+        score = scorer.score_raw(
             content=essay.content,
             prompt=essay.prompt,
             difficulty=essay.difficulty,

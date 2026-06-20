@@ -1,4 +1,4 @@
-﻿"""
+"""
 Agent-based Essay Scorer
 通过 subprocess 调用 hermes chat 实现评分
 """

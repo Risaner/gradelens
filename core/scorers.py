@@ -1,22 +1,18 @@
 """
-通用LLM评分器 — 使用DeepSeek/Qwen作为参考评分标准
+LLM-based Essay Scorer
+Uses DeepSeek/Qwen/OpenAI as scoring engine
 """
 import os
 import json
-from typing import Dict, List
+from typing import Dict, Optional
 from openai import OpenAI
+from core.base import Scorer, Essay
 
 
-class LLMScorer:
+class LLMScorer(Scorer):
     """
-    使用LLM对作文进行多维度评分
-    
-    评分维度：
-    - language: 语法/词汇
-    - content: 切题度/内容深度  
-    - structure: 篇章结构
-    - technical: 拼写/标点/格式
-    - overall: 总分(0-100)
+    LLM scorer for CET-4/6 English essays.
+    Supports DeepSeek, Qwen, OpenAI providers.
     """
 
     SYSTEM_PROMPT = """You are an experienced English language examiner grading Chinese college students' English essays (CET-4/6 level).
@@ -39,9 +35,7 @@ Return ONLY valid JSON, no markdown, no explanation:
 """
 
     def __init__(self, provider: str = "deepseek"):
-        """
-        provider: 'deepseek', 'qwen', or 'openai'
-        """
+        super().__init__(f"LLM({provider})")
         self.provider = provider
         if provider == "deepseek":
             api_key = os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("OPENAI_API_KEY")
@@ -58,35 +52,54 @@ Return ONLY valid JSON, no markdown, no explanation:
         else:
             raise ValueError(f"Unknown provider: {provider}")
 
-    def score(self, content: str, prompt: str = "", difficulty: str = "medium", strategy: str = "natural") -> Dict:
-        """
-        对作文内容进行评分
-        
-        Returns:
-            {"language": X, "content": X, "structure": X, "technical": X, 
-             "overall": X, "feedback": "..."}
-        """
+    def score(self, essay: Essay) -> Dict:
+        """Score an Essay object. Returns dict with language/content/structure/technical/overall/feedback."""
+        content = essay.content
+        prompt = essay.prompt if hasattr(essay, 'prompt') else ""
+        difficulty = essay.difficulty if hasattr(essay, 'difficulty') else "medium"
+        strategy = essay.strategy if hasattr(essay, 'strategy') else "natural"
+
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
                     {"role": "system", "content": self.SYSTEM_PROMPT},
-                    {
-                        "role": "user",
-                        "content": f"Difficulty: {difficulty} | Strategy: {strategy}\nPrompt: {prompt}\n\nEssay:\n{content}"
-                    },
+                    {"role": "user", "content": f"Difficulty: {difficulty} | Strategy: {strategy}\nPrompt: {prompt}\n\nEssay:\n{content}"},
                 ],
                 temperature=0.3,
                 max_tokens=500,
             )
             result_text = response.choices[0].message.content.strip()
-            # 清理可能的前缀
             for prefix in ["Here is", "Sure", "OK", "Below"]:
                 if result_text.startswith(prefix):
                     first_brace = result_text.find("{")
                     if first_brace > 0:
                         result_text = result_text[first_brace:]
-            
+            return json.loads(result_text)
+        except Exception as e:
+            return {
+                "language": 0, "content": 0, "structure": 0, "technical": 0,
+                "overall": 0, "feedback": f"Error: {e}", "error": True
+            }
+
+    def score_raw(self, content: str, prompt: str = "", difficulty: str = "medium", strategy: str = "natural") -> Dict:
+        """Score raw essay content (backward-compatible interface for CLI/scripts)."""
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": self.SYSTEM_PROMPT},
+                    {"role": "user", "content": f"Difficulty: {difficulty} | Strategy: {strategy}\nPrompt: {prompt}\n\nEssay:\n{content}"},
+                ],
+                temperature=0.3,
+                max_tokens=500,
+            )
+            result_text = response.choices[0].message.content.strip()
+            for prefix in ["Here is", "Sure", "OK", "Below"]:
+                if result_text.startswith(prefix):
+                    first_brace = result_text.find("{")
+                    if first_brace > 0:
+                        result_text = result_text[first_brace:]
             return json.loads(result_text)
         except Exception as e:
             return {

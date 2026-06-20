@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 __pycache__/
 *.py[cod]
 *.class
@@ -51,3 +51,9 @@ config.yaml
 # Project internal
 *.b64
 task_status.json
+
+# Project internal (planning/audit)
+aes-bench-plan.md
+AUDIT.md
+# Pytest
+.pytest_cache/
