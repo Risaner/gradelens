@@ -58,3 +58,4 @@ AUDIT.md
 # Demo data (committed for out-of-box experience)
 # data/manual_scores_*.json  # included
 # data/results/agent_scores.json  # included
+data/analysis/
