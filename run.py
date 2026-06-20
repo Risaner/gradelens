@@ -143,7 +143,7 @@ def run_all(output_dir=None, provider="deepseek"):
 
 if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(description="Run AES-Bench full pipeline")
+    parser = argparse.ArgumentParser(description="Run GradeLens full pipeline")
     parser.add_argument("--output", "-o", help="Output directory")
     parser.add_argument("--provider", "-p", default="deepseek", choices=["deepseek", "qwen", "openai"])
     args = parser.parse_args()

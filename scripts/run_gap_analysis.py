@@ -56,7 +56,7 @@ def run_gap_analysis():
         return
     avg_gap = total_gap / count
     print("=" * 60)
-    print("AES-Bench Gap Analysis Report")
+    print("GradeLens Gap Analysis Report")
     print("=" * 60)
     print(f"Total essays: {count}")
     print(f"Average gap: {avg_gap:.1f}")

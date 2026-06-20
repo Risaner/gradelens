@@ -1,4 +1,4 @@
-# AES-Bench Agent Scoring Gap Analysis Report
+# GradeLens Agent Scoring Gap Analysis Report
 ## Overview
 - Total essays analyzed: 48
 - Average gap (Agent - Manual): -2.0

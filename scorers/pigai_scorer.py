@@ -14,7 +14,7 @@ class PigaiScorer(Scorer):
         payload = {
             'title': essay.title,
             'content': essay.content,
-            'comcontext': 'AES-Bench Evaluation'
+            'comcontext': 'GradeLens Evaluation'
         }
         try:
             response = requests.post(url, json=payload, timeout=30)

@@ -13,7 +13,7 @@ from scorers.llm_scorer import LLMScorer
 
 def run():
     print('=' * 60)
-    print('AES-Bench Agent Batch Scorer')
+    print('GradeLens Agent Batch Scorer')
     print('=' * 60)
     
     ds = Dataset('data')

@@ -1,6 +1,6 @@
 # Contributing
 
-Welcome to AES-Bench!
+Welcome to GradeLens!
 
 ## How to Contribute
 

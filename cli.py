@@ -1,5 +1,5 @@
 """
-AES-Bench CLI
+GradeLens CLI
 """
 import argparse
 import json
@@ -74,7 +74,7 @@ def cmd_analyze(args):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="AES-Bench CLI")
+    parser = argparse.ArgumentParser(description="GradeLens CLI")
     sub = parser.add_subparsers(dest="command")
     score_p = sub.add_parser("score", help="Score essays with LLM")
     score_p.add_argument("--input", "-i", help="Input essays directory")

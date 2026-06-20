@@ -1,6 +1,6 @@
-# AES-Bench: Agent Evaluation Score Benchmark
+# GradeLens: Agent Evaluation Score Benchmark
 """
-Core modules for AES-Bench.
+Core modules for GradeLens.
 """
 from core.base import Essay, Scorer
 from core.dataset import Dataset
