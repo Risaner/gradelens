@@ -1,0 +1,17 @@
+{
+  "id": "n_th_004",
+  "title": "News: Student Innovation Competition",
+  "prompt": "Write a news report about a national college student innovation competition held in Beijing, where teams presented AI and green technology projects. Include quotes from judges, winners, and organizers. (~180 words)",
+  "content": "**National College Innovation Competition Highlights Technological Prowess in Beijing**\n\n**BEIJING, October 26** – A pivotal platform for youth ingenuity, the National College Student Innovation Competition, concluded its spirited finals in Beijing yesterday. This crucial event demonstrated the remarkable potential of China's next generation of problem-solvers, with projects centered on artificial intelligence and green technology.\n\nFirstly, the competition showcased an unprecedented convergence of digital and sustainable solutions. Teams presented prototypes ranging from AI-driven precision agriculture systems to novel carbon-capture materials. \"Seldom has such a sophisticated integration of cutting-edge technology and ecological consciousness been observed among undergraduates,\" remarked Dr. Li, a chief judge. Moreover, the winning team, \"EcoNeuron,\" highlighted a bio-inspired AI model for optimizing urban energy grids. Their spokesperson stated, \"Our project aims not merely to innovate, but to provide a scalable blueprint for sustainable smart cities.\"\n\nHowever, the event’s significance transcended the awards. Had the organizers not established this forum, many of these inventive concepts might have remained latent. The chief organizer emphasized, \"This competition is a crucible for nurturing critical thinking and collaborative skills essential for national advancement.\" In conclusion, the successful event powerfully demonstrated how focused student innovation competition drives progress, with its spotlight on AI and green technology affirming its role in shaping a technologically advanced and sustainable future. This annual innovation competition thus remains a cornerstone of academic and practical excellence.",
+  "category": "news",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 225,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "news"
+  ],
+  "generated_at": "2026-06-19T17:31:33.545609"
+}

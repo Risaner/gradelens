@@ -1,0 +1,26 @@
+# AES-Bench Configuration
+
+# API Keys（按需填写，留空则跳过对应评分器）
+deepseek_api_key: ""
+qwen_api_key: ""
+dashscope_api_key: ""  # 通义千问API
+
+# iWrite API（需要账号信息，可选）
+iwrite_username: ""
+iwrite_password: ""
+
+# 批改网 API（需要账号信息，可选）
+pigai_username: ""
+pigai_password: ""
+
+# 扫描配置
+scan:
+  batch_size: 10          # 每批扫描的作文数量
+  delay_seconds: 1.0      # 请求间隔（秒），避免限流
+  max_retries: 3          # 最大重试次数
+  timeout: 30             # 请求超时（秒）
+
+# 输出配置
+output:
+  format: "json,csv"      # 输出格式
+  include_raw: true       # 是否包含原始评分详情

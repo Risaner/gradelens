@@ -1,0 +1,17 @@
+{
+  "id": "a_tm_005",
+  "title": "Reading Books vs. Reading on the Internet",
+  "prompt": "With the development of the Internet, many people prefer reading online to reading printed books. Discuss the advantages and disadvantages of each. (~180 words)",
+  "content": "The ongoing debate between traditional reading and its digital counterpart is multifaceted. Firstly, reading printed books offers unparalleled depth and focus. It is the tangible nature of books that facilitates deep reading, minimizing distractions and enhancing comprehension. Rarely do we consider the cognitive benefits of this uninterrupted reading experience for sustained knowledge acquisition.\n\nMoreover, internet reading provides distinct advantages. This mode of reading offers immediate access to a vast, constantly updated repository of information, which is crucial for contemporary research. Furthermore, digital platforms often make reading more interactive and accessible, demonstrating a significant evolution in how we consume text.\n\nHowever, one must acknowledge the disadvantages of each. Excessive internet reading can encourage superficial skimming, whereas physical books lack the dynamic, hyperlinked functionality of online sources. Had the format of reading not evolved, we would not have this diversity of choices.\n\nIn conclusion, the optimal choice depends on the reading purpose. For profound literary immersion, physical books remain superior. For efficient information gathering, digital reading is often preferable. A balanced approach to reading, leveraging the strengths of both media, is arguably the most beneficial strategy in the modern age.",
+  "category": "argumentative",
+  "difficulty": "medium",
+  "strategy": "template",
+  "word_count": 188,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "medium",
+    "argumentative"
+  ],
+  "generated_at": "2026-06-19T17:26:39.284699"
+}

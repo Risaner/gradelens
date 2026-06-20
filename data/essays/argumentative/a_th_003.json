@@ -1,0 +1,17 @@
+{
+  "id": "a_th_003",
+  "title": "Should College Students Use Smartphones in Class?",
+  "prompt": "Many universities have banned smartphones in classrooms, arguing they distract students. Others believe smartphones are valuable learning tools. Write an essay discussing whether college students should be allowed to use smartphones in class. (~180 words)",
+  "content": "Firstly, the pervasive use of smartphones in educational settings has sparked considerable debate. Many academic institutions have opted to prohibit these devices within lecture halls, contending that they are a primary source of distraction for students. This perspective underscores a belief that focused learning requires an environment free from digital interruptions.\n\nMoreover, compelling arguments demonstrate that smartphones can serve as crucial learning tools. When used responsibly, they provide instant access to academic applications, digital textbooks, and collaborative platforms. For instance, students can swiftly reference supplementary materials or participate in interactive polls. Were it not for these educational applications, one might undervalue their potential. Not only do they facilitate research, but they also prepare graduates for a technologically integrated workplace.\n\nHowever, it is undeniable that the misuse of smartphones can severely undermine academic engagement. The constant temptation of social media and entertainment can fracture concentration, making it difficult for learners to absorb complex material. Were all students to use their devices exclusively for coursework, the ban would be unnecessary. Yet, the reality is that self-regulation is often challenging in a lecture environment.\n\nIn conclusion, while the distractions posed by smartphones in class are substantial, a complete ban may be an overly simplistic solution. A more nuanced policy, perhaps designating specific times for their use as learning tools, could balance the need for focus with the benefits of technological integration. Ultimately, cultivating digital discipline is a crucial part of modern education.",
+  "category": "argumentative",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 239,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "argumentative"
+  ],
+  "generated_at": "2026-06-19T17:22:17.344035"
+}

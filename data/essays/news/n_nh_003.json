@@ -1,0 +1,17 @@
+{
+  "id": "n_nh_003",
+  "title": "News: New Campus App Launch",
+  "prompt": "Write a news article about students at a Chinese university developing and launching a new campus service app that integrates class schedules, library booking, and cafeteria ordering. Include quotes from the development team. (~180 words)",
+  "content": "**New Campus App “UniLife” Launches at Jinghai University, Streamlining Student Services**\n\nJINGHAI, CHINA – A team of computer science students at Jinghai University has officially launched “UniLife,” an innovative mobile application designed to simplify daily campus life. The all-in-one platform integrates essential services, including real-time class schedule viewing, library study room booking, and pre-ordering meals from campus cafeterias, eliminating the need for multiple separate apps or queues.\n\nThe app, developed over 18 months by a student-led team, aims to reduce logistical friction. “We saw students struggling to juggle different systems. Our goal was to put everything in one intuitive space,” said Li Wen, the project leader and a senior in software engineering. A key feature is the cafeteria module, which allows users to browse menus, pay via campus card integration, and collect orders at dedicated pickup counters, significantly cutting wait times.\n\nBeta testing among 500 students revealed overwhelmingly positive feedback. “It’s transformed my routine. I book my library spot during breakfast and order lunch while walking to my last lecture,” commented Zhang Mei, a sophomore tester. Developer Chen Hao highlighted the technical challenges: “Ensuring stable integration with the university’s existing backend systems was our biggest hurdle, but we’re proud of the result.”\n\nThe team plans to add features like shuttle bus tracking and event calendars in the next update. University administrators have endorsed the project, noting its potential to enhance campus efficiency and resource management. UniLife is now available for free download on all major app stores for registered students.",
+  "category": "news",
+  "difficulty": "high",
+  "strategy": "natural",
+  "word_count": 250,
+  "manual_score": null,
+  "tags": [
+    "natural",
+    "high",
+    "news"
+  ],
+  "generated_at": "2026-06-19T17:33:19.264982"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "a_th_005",
+  "title": "Is E-book Better Than Print Book?",
+  "prompt": "With the digital revolution, e-books have become increasingly popular among students. Some argue e-books are more convenient and eco-friendly, while others prefer the tactile experience of printed books. Write an essay comparing both formats. (~200 words)",
+  "content": "In the contemporary educational landscape, the debate between the utility of e-books and print books has become crucial. While some advocate for the digital format, others contend that traditional books hold irreplaceable value. This essay will demonstrate that although e-books offer significant advantages, the print book retains unique merits.\n\nFirstly, the e-book presents unparalleled convenience. Not only do e-books allow students to carry an entire library on a single device, but they also offer features like instant search and adjustable text. Moreover, the environmental benefit of reduced paper consumption makes the e-book a more sustainable choice. Were students to fully adopt this format, the ecological footprint of academic pursuits could be significantly minimized.\n\nHowever, the print book should not be disregarded. The tactile experience of a physical book aids concentration and enhances memory retention for many learners. Furthermore, the absence of digital distractions and the ergonomic comfort of flipping pages demonstrate a unique cognitive advantage. Had the print book been entirely obsolete, its persistent popularity in academic circles would be inexplicable.\n\nIn conclusion, both the e-book and the print book serve vital, albeit distinct, purposes. While the e-book excels in portability and ecological considerations, the print book offers a focused, tactile learning experience. Ultimately, the optimal choice depends on individual learning styles and specific academic contexts, suggesting a complementary rather than competitive relationship between the two formats.",
+  "category": "argumentative",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 227,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "argumentative"
+  ],
+  "generated_at": "2026-06-19T17:22:41.206015"
+}

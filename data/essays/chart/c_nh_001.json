@@ -1,0 +1,17 @@
+{
+  "id": "c_nh_001",
+  "title": "University Library Usage Statistics",
+  "prompt": "The bar chart compares the average monthly library visits per student at four Chinese universities (Peking University, Tsinghua University, Fudan University, Zhejiang University) in 2023. Write an essay describing the data and offering possible explanations. (~180 words)",
+  "content": "The bar chart provides a clear comparison of average monthly library visits per student at four of China's most prestigious universities in 2023. Tsinghua University leads the data with a notably high frequency of visits, followed closely by Peking University. Fudan University and Zhejiang University show considerably lower usage, with Zhejiang recording the least number of visits among the four.\n\nSeveral factors could explain these variations. The higher frequency at Tsinghua and Peking may reflect a particularly intense academic culture or a more exam-centric curriculum, compelling students to utilize library resources more heavily for research and revision. These universities might also host superior library facilities, including extensive digital archives or specialized collections that attract students consistently. Conversely, the lower figures at Fudan and Zhejiang University could stem from differences in campus geography, where departments or labs are more dispersed, or perhaps from a stronger emphasis on digital remote access to materials, reducing the need for physical visits.\n\nUltimately, these statistics are more than mere numbers; they hint at the varying rhythms of student life and institutional priorities. While high usage may indicate deep academic engagement, it is also essential to consider that effective learning occurs in many environments, and library visits alone do not fully measure a university's academic vitality. The data invites further discussion about how physical spaces support or adapt to modern educational habits.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "natural",
+  "word_count": 226,
+  "manual_score": null,
+  "tags": [
+    "natural",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:29:50.004069"
+}

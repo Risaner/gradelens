@@ -1,0 +1,53 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (large files)
+data/manual_scores_batch*.json
+data/manual_scores_complete.json
+data/results/agent_scores.json
+data/figures/*.png
+data/essays/txt/*.txt
+
+# Secrets
+config.yaml
+
+# Logs
+*.log
+
+# Project internal
+*.b64
+task_status.json

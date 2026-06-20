@@ -1,0 +1,17 @@
+{
+  "id": "n_th_003",
+  "title": "News: Campus Safety Incident",
+  "prompt": "Write a news article about a recent incident at a Chinese university campus (e.g., a fire drill, a security breach, or a public health alert). Follow the inverted pyramid structure with quotes from campus officials. (~180 words)",
+  "content": "A recent security incident at a prominent university has placed campus safety under intense scrutiny. On Tuesday evening, an unauthorized individual gained access to a residential hall, prompting a university-wide lockdown and subsequent investigation. This breach has catalyzed an urgent review of existing safety protocols.\n\nFirstly, the university’s immediate response demonstrated the effectiveness of its emergency systems. The campus security director, in a statement, emphasized, \"Our priority is always student welfare. The lockdown was executed swiftly, and our collaboration with local authorities was seamless.\" Moreover, the incident underscores a crucial point: physical security measures, such as surveillance and access control, are only one facet of comprehensive campus safety. It is imperative that institutions foster a culture of vigilance among students and staff alike.\n\nHowever, the event raises questions about systemic vulnerabilities. Only after the suspect was apprehended did officials confirm that a faulty security gate permitted the intrusion. This highlights a need for regular infrastructure audits. In conclusion, while the swift resolution is commendable, this campus safety breach serves as a stark reminder. Continuous investment in and refinement of campus safety initiatives are not merely advisable but essential to ensure a secure educational environment. Not only must technology be updated, but community awareness must also be perpetually strengthened.",
+  "category": "news",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 208,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "news"
+  ],
+  "generated_at": "2026-06-19T17:31:18.127159"
+}

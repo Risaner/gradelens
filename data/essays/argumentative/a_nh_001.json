@@ -1,0 +1,17 @@
+{
+  "id": "a_nh_001",
+  "title": "AI and Human Creativity",
+  "prompt": "AI systems can now write essays, paint pictures, and compose music. Some fear this threatens human creativity. Others argue AI is just another tool. Discuss your view. (~180 words)",
+  "content": "Artificial intelligence now demonstrates remarkable capabilities in creative domains, from generating coherent essays to producing visual art and music. This rapid advancement has sparked a debate: does AI pose a threat to human creativity, or is it simply another instrument in our creative toolbox? While concerns are understandable, I believe AI functions primarily as a powerful collaborator rather than a replacement for human ingenuity.\n\nThe anxiety stems from AI's ability to mimic human-like outputs. However, creativity is not merely about producing a painting or a symphony; it is fundamentally rooted in human experience, emotion, and intention. AI lacks the lived experience, personal struggle, and deep emotional resonance that infuse true art with meaning. It operates based on patterns in existing data, whereas human creativity often involves breaking patterns, expressing novel perspectives, and connecting disparate ideas in profoundly personal ways. Therefore, AI-generated work, while technically proficient, often lacks the depth of soul that defines great art.\n\nInstead of viewing AI as a competitor, we should harness it as a transformative tool. Just as the camera did not end painting but expanded its possibilities, AI can handle technical or repetitive aspects of creation. It can help artists brainstorm, overcome creative blocks, or execute complex technical tasks, freeing humans to focus on higher-level conceptual thinking and emotional expression. In this partnership, AI amplifies human potential, allowing us to explore creative territories previously beyond our reach.\n\nUltimately, the value of creativity lies in its human origin. AI is a sophisticated mirror reflecting our own data, not a rival consciousness. By embracing it as an assistant, we can enhance our creative processes, ensuring that human imagination remains at the heart of innovation.",
+  "category": "argumentative",
+  "difficulty": "high",
+  "strategy": "natural",
+  "word_count": 277,
+  "manual_score": null,
+  "tags": [
+    "natural",
+    "high",
+    "argumentative"
+  ],
+  "generated_at": "2026-06-19T17:24:36.620312"
+}

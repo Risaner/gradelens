@@ -1,0 +1,17 @@
+{
+  "id": "n_th_008",
+  "title": "News: International Student Exchange Program",
+  "prompt": "Write a news report about a Chinese university signing a major international student exchange agreement with European universities, enabling thousands of students to study abroad. Include quotes from the international office director. (~180 words)",
+  "content": "In a landmark development for academic cooperation, Peking University has formalized a groundbreaking international student exchange agreement with a consortium of top European institutions. This pivotal accord, signed yesterday in a virtual ceremony, is set to facilitate the mobility of thousands of undergraduate and postgraduate students annually. The program’s unprecedented scale underscores China's commitment to fostering global educational ties.\n\nFirstly, the agreement establishes a comprehensive framework for student exchange, research collaboration, and faculty sharing. Not only does it encompass semester-long exchanges, but it also integrates summer schools and joint degree initiatives. Moreover, substantial funding has been allocated to ensure inclusivity, providing scholarships for a significant portion of participants. Dr. Wang Lin, Director of the University's International Office, stated, \"This program is a crucial engine for cultivating globally competent talent. We are confident it will demonstrate China's dedication to open academic dialogue.\"\n\nHowever, the initiative is not without its logistical challenges. Effective implementation will require meticulous coordination between differing academic calendars and credit systems. Dr. Wang further elaborated, \"Had we not invested years in building mutual trust with our European partners, this ambitious undertaking would have been impossible. We are now fully prepared to ensure its seamless execution.\"\n\nIn conclusion, this historic student exchange program marks a significant stride in international education. It will not only enrich the academic experiences of participating students but also serve as a robust bridge for cross-cultural understanding, ultimately strengthening the vital links between Chinese and European academic communities.",
+  "category": "news",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 243,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "news"
+  ],
+  "generated_at": "2026-06-19T17:32:37.250007"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "c_th_007",
+  "title": "Foreign Language Learning Methods Preference",
+  "prompt": "A pie chart shows Chinese students' preferred methods for learning foreign languages: mobile apps (40%), online courses (25%), classroom learning (20%), reading books (10%), language exchange (5%). Write an essay describing the data and discussing the implications. (~200 words)",
+  "content": "The provided pie chart delineates the distinct preferences Chinese students exhibit regarding foreign language learning methods. A predominant 40% favour mobile applications, followed by online courses at 25%, while traditional classroom learning accounts for 20%. A smaller proportion of students, 10% and 5% respectively, opt for reading books or engaging in language exchange.\n\nFirstly, the supremacy of mobile apps underscores a shift towards flexible, technology-driven foreign language learning methods. This trend demonstrates how convenience and accessibility are now crucial factors for learners. Moreover, the combined preference for digital foreign language learning methods—mobile apps and online courses totalling 65%—significantly outweighs conventional classroom settings. However, one should not underestimate the value of the 20% who still prefer structured classroom learning, as it fosters direct interaction and immediate feedback, elements often lacking in digital foreign language learning methods.\n\nIn conclusion, the data reveals a clear gravitation towards autonomous, technology-mediated foreign language learning methods. Were educational institutions to fully embrace this, curriculum design could be revolutionized. It is imperative that these popular foreign language learning methods are not only maintained but enhanced with pedagogical rigor. Under no circumstances should the strengths of classroom interaction be entirely disregarded. Ultimately, a balanced integration of these diverse foreign language learning methods would likely yield the most effective results, catering to varied student needs and learning styles.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 219,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:29:26.419669"
+}

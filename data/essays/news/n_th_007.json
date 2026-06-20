@@ -1,0 +1,17 @@
+{
+  "id": "n_th_007",
+  "title": "News: Tech Company Campus Recruitment",
+  "prompt": "Write a news article about a major Chinese tech company (like Alibaba or Tencent) launching an unprecedented campus recruitment drive with record-high starting salaries. Include quotes from HR managers and successful candidates. (~180 words)",
+  "content": "Alibaba Launches Record-Breaking Campus Recruitment Drive\n\nShanghai, October 26 – In a move that has sent shockwaves through China’s graduate employment market, tech giant Alibaba Group today announced its most ambitious campus recruitment campaign to date. Firstly, this unprecedented campus recruitment initiative aims to onboard over 5,000 graduates from top universities nationwide, offering starting salaries that are a remarkable 30% higher than industry averages.\n\nMoreover, the centerpiece of this tech company campus recruitment is a new \"Future Pioneers\" package. Successful candidates will not only receive a lucrative salary but also substantial stock options, accelerated promotion tracks, and relocation bonuses. Ms. Li Wei, Head of Talent Acquisition, stated, \"This unparalleled campus recruitment drive is crucial for securing the visionary talent necessary to fuel our next phase of innovation. We are investing heavily in our future leaders.\" Only the most exceptional students will be selected.\n\nHowever, the fierce competition underscores the high standards required. A successful candidate, Zhang Wei from Peking University, commented, \"The rigorous selection process demonstrated Alibaba's commitment to excellence. This campus recruitment offer is life-changing.\" Had it not been for this intensive program, many such graduates might have considered opportunities abroad.\n\nIn conclusion, this landmark campus recruitment not only exemplifies Alibaba's strategic foresight but also sets a new benchmark for the entire sector. It is hoped that this move will significantly retain top domestic talent and foster technological advancement within China for years to come.",
+  "category": "news",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 236,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "news"
+  ],
+  "generated_at": "2026-06-19T17:32:24.187451"
+}

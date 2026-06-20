@@ -1,0 +1,17 @@
+{
+  "id": "c_th_008",
+  "title": "Changes in Chinese Youth Employment Sectors",
+  "prompt": "The stacked bar chart shows the distribution of new college graduates working in different sectors (Internet/Tech, Manufacturing, Finance, Education, Government, Healthcare) from 2018 to 2024. Write an essay describing the shifts and analyzing the reasons. (~200 words)",
+  "content": "The provided chart offers a detailed analysis of the shifting employment sectors for new Chinese graduates between 2018 and 2024. Firstly, a significant surge is evident in the Internet and Technology sector, which has become the dominant employment sector for youth. Conversely, the Manufacturing sector has experienced a marked decline. Moreover, while Finance has shown relative stability, the Government and Education sectors have seen modest fluctuations. Healthcare, however, has demonstrated a steady, albeit minor, increase throughout the period.\n\nSeveral crucial factors underpin these transformations in youth employment sectors. Not only has national policy prioritized digital innovation, but private tech enterprises have also expanded aggressively, creating abundant high-skilled roles. Were it not for the push towards automation and advanced manufacturing, the traditional industrial employment sector would likely have contracted even further. Furthermore, the persistent appeal of stable, public-sector jobs explains the resilience of the Government employment sector, though competitive examinations remain a formidable barrier.\n\nIn conclusion, the evolution of these employment sectors primarily reflects China's broader economic restructuring. The data unequivocally demonstrates a pivot from traditional industry towards the digital and service economies. Consequently, educational institutions and policymakers must collaborate to align graduate skills with the demands of emerging employment sectors, ensuring a sustainable transition for the nation's future workforce.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 209,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:29:38.445240"
+}

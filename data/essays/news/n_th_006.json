@@ -1,0 +1,17 @@
+{
+  "id": "n_th_006",
+  "title": "News: Campus Environmental Initiative",
+  "prompt": "Write a news report about a Chinese university launching a zero-carbon campus initiative, including solar panels, waste sorting, and green transportation. Include quotes from the university president and student volunteers. (~180 words)",
+  "content": "**By Chen Wei, Campus Correspondent**\n\nIn a decisive move towards sustainability, a prominent Chinese university has recently inaugurated its comprehensive zero-carbon campus initiative. This ambitious project aims to transform the university into a model of environmental stewardship through a multi-faceted approach.\n\nFirstly, the initiative's cornerstone is the extensive installation of solar panels across campus rooftops, significantly reducing reliance on conventional power. Moreover, a rigorously enforced waste sorting system has been implemented, with color-coded bins for recyclables, food waste, and other refuse, greatly enhancing recycling rates. Furthermore, the promotion of green transportation is pivotal; new bike-sharing stations and electric shuttle buses now provide the campus community with viable, low-emission alternatives. It is this zero-carbon campus initiative that demonstrates the university's commitment to practical ecological action.\n\nUniversity President Dr. Li Hua stated, \"Our zero-carbon campus initiative is not merely infrastructural but educational. We hope to cultivate a generation that views sustainability as a non-negotiable principle.\" Echoing this sentiment, student volunteer Zhang Mei added, \"We are not just beneficiaries but active participants. This initiative empowers us to contribute directly to a greener future.\"\n\nIn conclusion, this pioneering zero-carbon campus initiative serves as a crucial blueprint for other institutions. Its successful integration of technology, policy, and student engagement powerfully demonstrates how academic communities can spearhead meaningful environmental change.",
+  "category": "news",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 214,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "news"
+  ],
+  "generated_at": "2026-06-19T17:32:10.182972"
+}

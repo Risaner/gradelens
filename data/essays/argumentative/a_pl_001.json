@@ -1,0 +1,17 @@
+{
+  "id": "a_pl_001",
+  "title": "Why Studying Is Important",
+  "prompt": "Write an essay about the importance of studying at university. Use simple language. (~120 words)",
+  "content": "Studying is very important at university. I think it is a good thing for every student. We study many subjects like math, English, and history. This help us get good knowledge.\n\nStudying is also good for our future. It can help us find a good job. We learn how to think and solve problem. Without study, life can be very bad. I think student must study hard.\n\nIn conclusion, studying help us became better person. It prepare us for the good future. University study is the most important time. Every student should think this is a good chance. We must not waste this opportunity.",
+  "category": "argumentative",
+  "difficulty": "low",
+  "strategy": "poor",
+  "word_count": 104,
+  "manual_score": null,
+  "tags": [
+    "poor",
+    "low",
+    "argumentative"
+  ],
+  "generated_at": "2026-06-19T17:26:48.803204"
+}

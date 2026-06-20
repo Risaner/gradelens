@@ -1,0 +1,17 @@
+{
+  "id": "c_th_004",
+  "title": "Internet Penetration Rate Across Age Groups",
+  "prompt": "The line chart below shows the internet penetration rate in China across different age groups (10-19, 20-29, 30-39, 40-49, 50-59, 60+) from 2015 to 2023. Write an essay describing the data and analyzing the gap between age groups. (~200 words)",
+  "content": "The line chart illustrates the evolving Internet penetration rate in China across six distinct age cohorts from 2015 to 2023. The data reveals a consistent and pronounced disparity in online accessibility, delineating a clear generational divide that has persisted over the eight-year period.\n\nFirstly, the Internet penetration rate among younger demographics has consistently remained exceptionally high. The 20-29 age group has demonstrated a near-universal adoption rate, maintaining figures above 95% throughout the timeframe. Similarly, the 10-19 and 30-39 groups exhibit comparably robust connectivity. Moreover, the most striking trend is the dramatic growth within older cohorts. The penetration rate for those aged 60 and above, while starting from a low base, experienced the most significant relative increase, climbing steadily to over 60% by 2023. This indicates a gradual narrowing of the digital divide for senior citizens.\n\nHowever, a substantial and persistent gap remains. Not only does the data reveal that the 50-59 group trails the peak rates of youth by approximately 20 percentage points, but it also shows that the 40-49 cohort lags behind the 20-somethings. Were this trend to continue, the senior demographic could achieve near-total integration, yet a generational stratification in digital literacy and usage might still endure.\n\nIn conclusion, the chart unequivocally demonstrates a positive trend of increasing Internet penetration across all age groups in China. Despite this overall improvement, a significant age-based chasm persists, particularly impacting older citizens. Addressing this gap is crucial for fostering a truly inclusive digital society.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 243,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:28:37.299596"
+}

@@ -1,0 +1,37 @@
+﻿name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Lint
+      run: |
+        python -c "import core; print('core OK')"
+        python -c "import scorers; print('scorers OK')"
+
+    - name: Run basic tests
+      run: |
+        python -c "from core.dataset import Dataset; ds = Dataset('data'); essays = ds.load_all(); assert len(essays) == 48, f'Expected 48 essays, got {len(essays)}'; print(f'Loaded {len(essays)} essays OK')"
+        python -c "import json; data = json.load(open('data/results/agent_scores.json', encoding='utf-8')); assert len(data['essays']) == 48; print(f'Agent scores OK: {len(data[\"essays\"])} essays')"

@@ -1,0 +1,17 @@
+{
+  "id": "n_nh_002",
+  "title": "News: Mental Health Awareness Week",
+  "prompt": "Write a news report about a week-long mental health awareness campaign at a major Chinese university, featuring workshops, peer counseling, and expert talks. Include quotes from organizers and participating students. (~180 words)",
+  "content": "**Peking University Launches Comprehensive Mental Health Awareness Week**\n\nBEIJING – Peking University wrapped up its inaugural Mental Health Awareness Week yesterday, a week-long initiative aimed at destigmatizing mental health and equipping students with coping strategies. Organized by the Student Union in collaboration with the Psychology Department, the campaign featured a diverse program of workshops, peer-led discussions, and expert lectures.\n\nThe events focused on practical skills, including stress management for exams, mindfulness meditation, and building resilience. A standout feature was the “Peer Support Corner,” where trained student volunteers offered informal, confidential conversations. Dr. Li Wei, a faculty advisor for the event, stated, “We wanted to create multiple entry points for support. The goal was to show that seeking help is a sign of strength, not weakness, and that resources are available within our campus community.”\n\nStudent participation was high throughout the week. Zhang Yiting, a third-year engineering student, attended a workshop on digital detox. “I learned that constant connectivity fuels my anxiety,” she shared. “The techniques to unplug, even for short periods, felt incredibly useful and not preachy at all.”\n\nThe organizers expressed satisfaction with the response, noting that the peer counseling sessions were consistently full. They hope this initial success will spark an ongoing conversation, making mental well-being a permanent part of the campus culture.",
+  "category": "news",
+  "difficulty": "high",
+  "strategy": "natural",
+  "word_count": 215,
+  "manual_score": null,
+  "tags": [
+    "natural",
+    "high",
+    "news"
+  ],
+  "generated_at": "2026-06-19T17:33:02.456891"
+}

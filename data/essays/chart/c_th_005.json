@@ -1,0 +1,17 @@
+{
+  "id": "c_th_005",
+  "title": "Popular Part-time Jobs among Chinese College Students",
+  "prompt": "A survey of 2000 Chinese college students shows the distribution of their part-time jobs: tutoring (35%), delivery driver (25%), internships (20%), retail (12%), others (8%). Write an essay describing the data and discussing what this reveals about students' priorities. (~200 words)",
+  "content": "A recent survey encompassing two thousand Chinese university students provides valuable insight into their preferred part-time employment. The data reveals a distinct hierarchy: tutoring commands a substantial 35%, followed by delivery driving at 25%, internships at 20%, retail at 12%, and other miscellaneous jobs constituting the remaining 8%. This distribution unequivocally demonstrates the diverse priorities and practical considerations that govern students' choices regarding part-time work.\n\nFirstly, the predominance of tutoring is hardly surprising. It is a crucial part-time job that directly leverages academic knowledge, offering both intellectual reinforcement and a sense of accomplishment. Moreover, it typically provides a comparatively stable and respectable income. Conversely, the high uptake of delivery driver roles highlights a priority for flexibility and immediate earning potential, despite the often demanding physical nature of such work. Were financial pressure less acute, the distribution might appear somewhat different.\n\nFurthermore, the 20% engaged in internships signal a forward-looking priority: career development. These students are willing to often sacrifice higher immediate pay for valuable professional experience and networking opportunities. Had the question been about preferred long-term outcomes, this figure would likely be significantly higher. In contrast, retail and other miscellaneous part-time jobs, while still vital, appear to be pursued more out of necessity or for varied experience rather than as a primary strategic choice.\n\nIn conclusion, the data regarding popular part-time jobs among Chinese college students paints a nuanced picture. It demonstrates that while financial imperatives are a paramount concern driving choices like tutoring and delivery, an increasing number of students also prioritize future career prospects through internships. This distribution of part-time jobs ultimately reflects a pragmatic balancing act between immediate financial needs and long-term professional ambitions.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 277,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:28:54.492971"
+}

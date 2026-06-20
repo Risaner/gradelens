@@ -1,0 +1,17 @@
+{
+  "id": "n_th_001",
+  "title": "News: University Introduces AI Curriculum",
+  "prompt": "Write a news article about a university in China introducing a mandatory AI course for all majors starting next semester. Include a dateline, lead paragraph, quotes from officials, and reactions from students and faculty. (~180 words)",
+  "content": "Beijing, China – October 10, 2023\n\nA leading university in China has announced a groundbreaking initiative, mandating an AI curriculum for all undergraduate students commencing next semester. This decision, aimed at fostering digital literacy across disciplines, underscores the institution's commitment to integrating artificial intelligence into higher education. Firstly, officials emphasize that this AI curriculum is crucial for equipping graduates with essential skills for a rapidly evolving job market.\n\nMoreover, the Dean of Academic Affairs, Dr. Li Wei, stated, \"This mandatory AI curriculum will demonstrate our proactive approach to education reform. Not only does it prepare students for technological advancements, but it also cultivates critical thinking.\" However, some faculty members have expressed concerns about resource allocation, yet they acknowledge the long-term benefits. The AI curriculum, designed with practical modules, is intended to bridge theoretical knowledge and real-world applications.\n\nIn contrast, student reactions have been overwhelmingly positive. A senior computer science major remarked, \"Integrating an AI curriculum across all fields is a visionary step; it will undoubtedly enhance our interdisciplinary competencies.\" Emphasis structures highlight that it is this holistic educational model that could set a new benchmark. Had the university delayed such changes, it might have lagged in national rankings.\n\nIn conclusion, the introduction of the AI curriculum represents a pivotal shift in",
+  "category": "news",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 211,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "news"
+  ],
+  "generated_at": "2026-06-19T17:30:41.296674"
+}

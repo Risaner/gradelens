@@ -1,0 +1,17 @@
+{
+  "id": "n_nh_001",
+  "title": "News: Campus Startup Incubator Opens",
+  "prompt": "Write a news article about a Chinese university opening a new startup incubator for student entrepreneurs. Include details about the program, first-year participants, and the university's vision. (~180 words)",
+  "content": "**State University Pioneers Comprehensive Startup Incubator for Student Innovators**\n\nShanghai, October 26 – In a significant move to foster entrepreneurship, Shanghai Jiao Tong University today inaugurated the \"Pioneer Hub,\" a dedicated incubator designed to support student-led startups from concept to market launch. The facility represents the university's commitment to bridging the gap between academic theory and real-world business creation.\n\nThe new program offers more than just shared office space. Participating student teams will receive seed funding up to 50,000 RMB, one-on-one mentorship from industry experts and successful alumni, and access to specialized workshops on business law, marketing, and finance. The initiative aims to cultivate a supportive ecosystem where nascent ideas can be rigorously tested and developed.\n\nThe first cohort comprises fifteen teams selected from a competitive pool of applicants. Projects range from a biodegradable packaging startup led by materials science majors to a digital platform for language tutoring created by computer science and humanities students. \"We're looking for passion and viable solutions, not just polished business plans,\" said Professor Li Wei, the Hub's director.\n\nUniversity President Zhang Ming articulated the broader vision during the opening ceremony. \"We are not merely chasing trends; we are investing in our students' potential to drive China's future high-tech economy,\" he stated. \"The Pioneer Hub is an experimental classroom where failure is a lesson, and success contributes to national innovation.\" The university hopes this model will become a blueprint for cultivating a new generation of socially responsible and commercially astute entrepreneurs.",
+  "category": "news",
+  "difficulty": "high",
+  "strategy": "natural",
+  "word_count": 246,
+  "manual_score": null,
+  "tags": [
+    "natural",
+    "high",
+    "news"
+  ],
+  "generated_at": "2026-06-19T17:32:51.013489"
+}

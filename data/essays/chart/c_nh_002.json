@@ -1,0 +1,17 @@
+{
+  "id": "c_nh_002",
+  "title": "E-book Sales Growth by Genre",
+  "prompt": "A line chart shows the monthly e-book sales (in million copies) in China across five genres (technology, literature, self-improvement, children, academic) from January to June 2024. Write an essay describing the trends and analyzing why certain genres perform better. (~200 words)",
+  "content": "The provided line chart tracks monthly e-book sales in China across five distinct genres from January to June 2024. The data reveals a dynamic market with clear leaders and steady performers, reflecting diverse consumer priorities.\n\nLiterature and children's books emerged as the undisputed leaders throughout the period. Literary fiction consistently dominated sales, likely driven by a sustained appetite for narrative escapism and emotional engagement. Similarly, children's e-books displayed strong and stable demand, indicating that parents are increasingly prioritizing digital reading as a convenient and accessible resource for education and entertainment. These two genres clearly cater to fundamental needs for both adult relaxation and child development.\n\nIn contrast, technology and academic genres exhibited more modest, though consistent, performance. Their sales curves remained relatively flat, suggesting a niche but dedicated audience. This stability points to practical, need-based consumption—professionals updating skills or students accessing materials—rather than leisure-driven browsing. Self-improvement books charted a middle course, showing a gentle upward trend. This aligns with a growing cultural emphasis on personal growth and lifelong learning, though it lacks the mass appeal of fiction.\n\nOverall, the trends illustrate that Chinese e-book consumers are primarily driven by emotional and developmental needs for themselves and their children. While practical knowledge-based genres maintain a steady presence, it is the realms of imagination and family-centric content that truly fuel the digital reading market's growth. This pattern underscores how digital platforms successfully serve both profound escapism and everyday utility.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "natural",
+  "word_count": 237,
+  "manual_score": null,
+  "tags": [
+    "natural",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:30:04.029389"
+}

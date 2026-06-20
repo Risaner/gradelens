@@ -1,0 +1,17 @@
+{
+  "id": "a_th_012",
+  "title": "The Benefits and Risks of Gene Editing Technology",
+  "prompt": "Gene editing technologies like CRISPR have shown great promise in medicine. Discuss the potential benefits and ethical risks of widespread gene editing. (~200 words)",
+  "content": "Gene editing technology, particularly CRISPR, has emerged as a revolutionary scientific tool. While its potential is vast, the widespread application of this technology presents both extraordinary benefits and profound ethical risks that demand careful consideration.\n\nFirstly, the medical advantages of gene editing are undeniable. This technology holds the promise to eradicate hereditary diseases by correcting faulty genes at their source. Moreover, it could dramatically improve cancer treatments and potentially eliminate certain viral infections. Were it not for the complexity of human genetics, gene editing could demonstrate a complete cure for conditions like sickle cell anemia. Furthermore, the research itself advances our fundamental understanding of human biology.\n\nHowever, the ethical risks associated with widespread gene editing are equally significant. It is precisely this power to alter the human germline that raises concerns about \"designer babies\" and unforeseen consequences for future generations. Not only does it threaten to deepen social inequalities, but it also poses a serious risk of unintended ecological disruption if applied to other species. Consequently, stringent international regulations are crucial to prevent misuse.\n\nIn conclusion, while gene editing technology offers unprecedented opportunities for medical advancement, its deployment must be governed by robust ethical frameworks. The challenge lies in harnessing its benefits to alleviate human suffering while meticulously safeguarding against its profound risks. Only through responsible and regulated use can this powerful tool fulfill its promise for humanity.",
+  "category": "argumentative",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 228,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "argumentative"
+  ],
+  "generated_at": "2026-06-19T17:24:23.455940"
+}

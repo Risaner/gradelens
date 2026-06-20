@@ -1,0 +1,17 @@
+{
+  "id": "a_tm_001",
+  "title": "The Advantages and Disadvantages of Technology",
+  "prompt": "Technology has changed our lives in many ways. Discuss both the positive and negative effects of technology on modern life. (~180 words)",
+  "content": "It is undeniable that technology has revolutionized the fabric of contemporary society. This essay will critically examine the multifaceted impacts of technological innovation.\n\nFirstly, the advantages of technology are substantial. It has dramatically enhanced efficiency, particularly in communication and information access. For instance, instant global connectivity fosters international collaboration and cultural exchange. Moreover, technological advancements in medicine and automation demonstrably improve quality of life and economic productivity. Not only does technology streamline complex tasks, but it also provides crucial educational tools, making knowledge more accessible than ever before.\n\nHowever, the pervasive integration of technology is not without significant drawbacks. Its detrimental effects on mental health and social skills are increasingly documented, with excessive screen time contributing to anxiety and isolation. Furthermore, concerns regarding data privacy and cyber security are paramount. Were society to overlook these risks, the very tools designed to connect us could erode fundamental personal freedoms.\n\nIn conclusion, while technology is an indispensable engine for progress and convenience, its benefits must be balanced against its potential to disrupt social cohesion and individual well-being. A judicious approach to its implementation is therefore essential.",
+  "category": "argumentative",
+  "difficulty": "medium",
+  "strategy": "template",
+  "word_count": 184,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "medium",
+    "argumentative"
+  ],
+  "generated_at": "2026-06-19T17:25:39.698703"
+}

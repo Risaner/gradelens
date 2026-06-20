@@ -1,0 +1,17 @@
+{
+  "id": "a_nh_002",
+  "title": "Remote Work: A New Normal",
+  "prompt": "Many companies adopted remote work during the pandemic and many continue to do so. Discuss whether remote work is beneficial or harmful to employees and society. (~180 words)",
+  "content": "The widespread adoption of remote work, accelerated by the pandemic, has fundamentally altered our professional landscape. While initially a necessity, its continuation suggests a permanent shift, leaving many to debate its true impact on both individuals and the broader community.\n\nFor many employees, the benefits are substantial. The elimination of daily commutes recovers valuable personal time and reduces stress, while the flexibility to design one's work environment can significantly boost productivity and job satisfaction. For society, this shift can lead to reduced traffic congestion and lower carbon emissions, and it decentralizes economic opportunity, allowing talent to thrive outside major metropolitan hubs.\n\nHowever, this model is not without its drawbacks. The blurring of boundaries between home and office can lead to burnout, as the workday never truly ends. Prolonged isolation can diminish team cohesion, impede spontaneous collaboration, and erode the social fabric that traditional offices provide. For some, the lack of a structured environment hinders focus and career visibility.\n\nUltimately, the success of remote work depends on thoughtful implementation. Its potential to enhance quality of life and promote sustainability is clear, but it must be balanced with intentional efforts to foster connection and maintain clear boundaries to prevent the harms of isolation and overwork.",
+  "category": "argumentative",
+  "difficulty": "high",
+  "strategy": "natural",
+  "word_count": 203,
+  "manual_score": null,
+  "tags": [
+    "natural",
+    "high",
+    "argumentative"
+  ],
+  "generated_at": "2026-06-19T17:24:47.896679"
+}

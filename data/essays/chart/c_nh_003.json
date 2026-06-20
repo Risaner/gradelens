@@ -1,0 +1,17 @@
+{
+  "id": "c_nh_003",
+  "title": "Energy Consumption Patterns in Chinese Cities",
+  "prompt": "The pie charts compare the energy consumption breakdown (residential, industrial, commercial, transportation) between Beijing and Chengdu. Write an essay describing the differences and discussing the reasons behind them. (~200 words)",
+  "content": "The pie charts illustrate distinct energy consumption patterns between Beijing and Chengdu, reflecting their unique economic and demographic profiles. While both cities allocate energy across residential, industrial, commercial, and transportation sectors, the proportional differences are significant.\n\nBeijing’s energy use is heavily industrialized, with industrial consumption accounting for a substantially larger share compared to Chengdu. This aligns with its role as a major national hub for high-tech manufacturing and state-owned enterprises. Furthermore, its transportation sector consumes a notably higher proportion of energy, consistent with its massive population, extensive public transit systems, and high private vehicle ownership. In contrast, Chengdu devotes a greater share of its energy to residential and commercial purposes. This suggests a stronger emphasis on urban living, commercial services, and perhaps a different climatic need for heating or cooling in its households.\n\nThese differences likely stem from divergent development priorities and geographical contexts. Beijing’s pattern reflects its status as a political and economic center with advanced industrial zones and complex transport networks. Chengdu’s pattern may indicate a service-oriented economy and a focus on enhancing urban livability. Ultimately, the charts reveal how a city’s function and stage of development fundamentally shape its energy footprint, offering insights for tailored sustainability strategies in China’s diverse urban landscape.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "natural",
+  "word_count": 205,
+  "manual_score": null,
+  "tags": [
+    "natural",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:30:16.941110"
+}

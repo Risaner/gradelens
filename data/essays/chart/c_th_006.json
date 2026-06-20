@@ -1,0 +1,17 @@
+{
+  "id": "c_th_006",
+  "title": "Growth of Online Food Delivery Services",
+  "prompt": "The chart below shows the market size of online food delivery services in China (in billion yuan) from 2018 to 2024, along with the number of users (in million). Write an essay describing both trends and analyzing their relationship. (~200 words)",
+  "content": "The provided chart illustrates two concurrent and interconnected trends within the Chinese market: the substantial expansion in the market size of online food delivery services and the significant rise in its user base from 2018 to 2024. Firstly, the market valuation is projected to witness a remarkable ascent, growing from approximately 470 billion yuan to an estimated 1,400 billion yuan. Concurrently, the number of users demonstrates a parallel surge, expanding from 350 million to 750 million. This data unequivocally demonstrates the sector's rapid and robust growth.\n\nMoreover, the relationship between these trends is intrinsically linked. The user base expansion acts as the primary catalyst for the market's financial growth. It is the increasing adoption of online food delivery services, fuelled by rising smartphone penetration and urbanization, that directly drives transaction volumes and revenue. Conversely, the substantial market investment enhances service quality, selection, and subsidies, which in turn attracts more users. Were it not for this virtuous cycle, the observed parallel growth would be improbable. The continuous enhancement of digital infrastructure is also a crucial factor enabling this ecosystem.\n\nHowever, this rapid proliferation is not without challenges. Issues such as food safety regulation, environmental impact from packaging waste, and the labour conditions of delivery riders require careful attention. Addressing these is vital for the sustainable long-term development of online food delivery services.\n\nIn conclusion, the chart reveals a powerful synergy between user adoption and market valuation within China's online food delivery sector. Not only has the number of users more than doubled, but the market has also nearly tripled in size, indicating a deeply entrenched shift in consumer behaviour. This dynamic underscores how technological integration fundamentally reshapes contemporary service industries.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 279,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:29:13.928676"
+}

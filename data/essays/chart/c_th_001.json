@@ -1,0 +1,17 @@
+{
+  "id": "c_th_001",
+  "title": "Changes in Chinese College Students' Reading Habits",
+  "prompt": "The table below shows the reading habits of college students in China from 2015 to 2025, including the percentage of students who prefer paper books, e-books, and audiobooks. Write an essay describing the data and explaining possible reasons for the changes. (~200 words)",
+  "content": "The provided data reveals a significant evolution in the reading habits of Chinese college students over the past decade, reflecting broader technological and cultural shifts. This transformation in consumption patterns underscores a pivotal move away from traditional formats towards more digital and flexible modes of content engagement.\n\nFirstly, the figures demonstrate a consistent decline in the preference for traditional paper books. In 2015, this format was predominant among students; however, its popularity has dwindled steadily. Conversely, the adoption of e-books has surged dramatically, becoming the preferred medium by 2025. Moreover, audiobooks, while initially a niche choice, have witnessed a parallel and noteworthy increase, carving out a substantial portion of the market. Not only has there been a clear pivot towards digital reading habits, but also a diversification in how literary content is accessed and absorbed.\n\nSeveral factors likely account for these changes in reading habits. Primarily, the ubiquitous penetration of smartphones, tablets, and dedicated e-readers has made digital content exceptionally accessible and convenient. Furthermore, the fast-paced academic and social life of students favors the portability and instant access that e-books and audiobooks provide. Were it not for these technological advancements, such a rapid shift in reading habits would have been improbable. Additionally, environmental concerns and the cost-effectiveness of digital publications act as further catalysts for this transition.\n\nIn conclusion, the data unequivocally illustrates a profound transformation in the reading habits of Chinese college students. This shift is predominantly driven by technological innovation and evolving lifestyle demands, suggesting that future reading habits will likely continue to embrace digital and auditory formats, further marginalizing traditional paper-based consumption.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 265,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:27:44.099413"
+}

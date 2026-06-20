@@ -1,0 +1,388 @@
+{
+  "gaps": [
+    {
+      "id": "a_nh_001",
+      "manual": 88,
+      "agent": 78,
+      "gap": -10,
+      "category": "argumentative",
+      "strategy": "natural"
+    },
+    {
+      "id": "a_nh_002",
+      "manual": 85,
+      "agent": 78,
+      "gap": -7,
+      "category": "argumentative",
+      "strategy": "natural"
+    },
+    {
+      "id": "a_nh_003",
+      "manual": 86,
+      "agent": 78,
+      "gap": -8,
+      "category": "argumentative",
+      "strategy": "natural"
+    },
+    {
+      "id": "a_nh_004",
+      "manual": 87,
+      "agent": 78,
+      "gap": -9,
+      "category": "argumentative",
+      "strategy": "natural"
+    },
+    {
+      "id": "a_nh_005",
+      "manual": 85,
+      "agent": 78,
+      "gap": -7,
+      "category": "argumentative",
+      "strategy": "natural"
+    },
+    {
+      "id": "a_pl_001",
+      "manual": 48,
+      "agent": 60,
+      "gap": 12,
+      "category": "argumentative",
+      "strategy": "poor"
+    },
+    {
+      "id": "a_pl_002",
+      "manual": 52,
+      "agent": 60,
+      "gap": 8,
+      "category": "argumentative",
+      "strategy": "poor"
+    },
+    {
+      "id": "a_pl_003",
+      "manual": 50,
+      "agent": 60,
+      "gap": 10,
+      "category": "argumentative",
+      "strategy": "poor"
+    },
+    {
+      "id": "a_th_002",
+      "manual": 82,
+      "agent": 78,
+      "gap": -4,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_003",
+      "manual": 83,
+      "agent": 78,
+      "gap": -5,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_004",
+      "manual": 84,
+      "agent": 78,
+      "gap": -6,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_005",
+      "manual": 82,
+      "agent": 78,
+      "gap": -4,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_006",
+      "manual": 83,
+      "agent": 78,
+      "gap": -5,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_007",
+      "manual": 81,
+      "agent": 78,
+      "gap": -3,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_008",
+      "manual": 83,
+      "agent": 78,
+      "gap": -5,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_009",
+      "manual": 76,
+      "agent": 73,
+      "gap": -3,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_010",
+      "manual": 84,
+      "agent": 78,
+      "gap": -6,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_011",
+      "manual": 83,
+      "agent": 78,
+      "gap": -5,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_th_012",
+      "manual": 82,
+      "agent": 78,
+      "gap": -4,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_tm_001",
+      "manual": 78,
+      "agent": 73,
+      "gap": -5,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_tm_003",
+      "manual": 75,
+      "agent": 73,
+      "gap": -2,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_tm_004",
+      "manual": 79,
+      "agent": 73,
+      "gap": -6,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "a_tm_005",
+      "manual": 78,
+      "agent": 73,
+      "gap": -5,
+      "category": "argumentative",
+      "strategy": "template"
+    },
+    {
+      "id": "c_nh_001",
+      "manual": 84,
+      "agent": 78,
+      "gap": -6,
+      "category": "chart",
+      "strategy": "natural"
+    },
+    {
+      "id": "c_nh_002",
+      "manual": 85,
+      "agent": 78,
+      "gap": -7,
+      "category": "chart",
+      "strategy": "natural"
+    },
+    {
+      "id": "c_nh_003",
+      "manual": 83,
+      "agent": 78,
+      "gap": -5,
+      "category": "chart",
+      "strategy": "natural"
+    },
+    {
+      "id": "c_th_001",
+      "manual": 80,
+      "agent": 78,
+      "gap": -2,
+      "category": "chart",
+      "strategy": "template"
+    },
+    {
+      "id": "c_th_002",
+      "manual": 78,
+      "agent": 78,
+      "gap": 0,
+      "category": "chart",
+      "strategy": "template"
+    },
+    {
+      "id": "c_th_004",
+      "manual": 79,
+      "agent": 78,
+      "gap": -1,
+      "category": "chart",
+      "strategy": "template"
+    },
+    {
+      "id": "c_th_005",
+      "manual": 79,
+      "agent": 78,
+      "gap": -1,
+      "category": "chart",
+      "strategy": "template"
+    },
+    {
+      "id": "c_th_006",
+      "manual": 80,
+      "agent": 78,
+      "gap": -2,
+      "category": "chart",
+      "strategy": "template"
+    },
+    {
+      "id": "c_th_007",
+      "manual": 77,
+      "agent": 78,
+      "gap": 1,
+      "category": "chart",
+      "strategy": "template"
+    },
+    {
+      "id": "c_th_008",
+      "manual": 78,
+      "agent": 78,
+      "gap": 0,
+      "category": "chart",
+      "strategy": "template"
+    },
+    {
+      "id": "m_bl_002",
+      "manual": 38,
+      "agent": 60,
+      "gap": 22,
+      "category": "mixed",
+      "strategy": "barely_pass"
+    },
+    {
+      "id": "m_bl_003",
+      "manual": 40,
+      "agent": 60,
+      "gap": 20,
+      "category": "mixed",
+      "strategy": "barely_pass"
+    },
+    {
+      "id": "m_ch_001",
+      "manual": 0,
+      "agent": 60,
+      "gap": 60,
+      "category": "mixed",
+      "strategy": "chinese_writing"
+    },
+    {
+      "id": "m_cl_001",
+      "manual": 42,
+      "agent": 60,
+      "gap": 18,
+      "category": "mixed",
+      "strategy": "chenglish"
+    },
+    {
+      "id": "m_cl_002",
+      "manual": 45,
+      "agent": 60,
+      "gap": 15,
+      "category": "mixed",
+      "strategy": "chenglish"
+    },
+    {
+      "id": "m_om_002",
+      "manual": 76,
+      "agent": 73,
+      "gap": -3,
+      "category": "mixed",
+      "strategy": "over_optimized"
+    },
+    {
+      "id": "n_nh_001",
+      "manual": 85,
+      "agent": 78,
+      "gap": -7,
+      "category": "news",
+      "strategy": "natural"
+    },
+    {
+      "id": "n_nh_002",
+      "manual": 86,
+      "agent": 78,
+      "gap": -8,
+      "category": "news",
+      "strategy": "natural"
+    },
+    {
+      "id": "n_nh_003",
+      "manual": 87,
+      "agent": 78,
+      "gap": -9,
+      "category": "news",
+      "strategy": "natural"
+    },
+    {
+      "id": "n_th_001",
+      "manual": 76,
+      "agent": 78,
+      "gap": 2,
+      "category": "news",
+      "strategy": "template"
+    },
+    {
+      "id": "n_th_003",
+      "manual": 75,
+      "agent": 78,
+      "gap": 3,
+      "category": "news",
+      "strategy": "template"
+    },
+    {
+      "id": "n_th_004",
+      "manual": 77,
+      "agent": 78,
+      "gap": 1,
+      "category": "news",
+      "strategy": "template"
+    },
+    {
+      "id": "n_th_006",
+      "manual": 77,
+      "agent": 78,
+      "gap": 1,
+      "category": "news",
+      "strategy": "template"
+    },
+    {
+      "id": "n_th_007",
+      "manual": 76,
+      "agent": 78,
+      "gap": 2,
+      "category": "news",
+      "strategy": "template"
+    },
+    {
+      "id": "n_th_008",
+      "manual": 77,
+      "agent": 78,
+      "gap": 1,
+      "category": "news",
+      "strategy": "template"
+    }
+  ]
+}

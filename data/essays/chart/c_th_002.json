@@ -1,0 +1,17 @@
+{
+  "id": "c_th_002",
+  "title": "Investment in AI Research by Top Companies",
+  "prompt": "The chart below shows the annual investment in AI research (in billion USD) by five major technology companies (Alibaba, Tencent, Baidu, ByteDance, Huawei) from 2018 to 2024. Write an essay describing the data and analyzing the trends. (~200 words)",
+  "content": "The provided data meticulously illustrates the annual investment in AI research by five leading Chinese technology corporations—Alibaba, Tencent, Baidu, ByteDance, and Huawei—from 2018 to 2024. Firstly, it is evident that all firms demonstrated a robust commitment to AI, yet with significant variation in their financial outlays. While Alibaba and Tencent consistently allocated the largest sums, often exceeding $10 billion annually by the forecast period, ByteDance exhibited the most dramatic growth trajectory.\n\nMoreover, the analysis reveals a clear strategic escalation across the sector. The sustained investment in AI research by these companies underscores its perceived centrality to future competitiveness. Not only did established giants like Baidu maintain substantial funding, but newer players like ByteDance aggressively ramped up their investment in AI research, indicating a belief in AI's transformative potential. This collective surge highlights a national priority, with annual investment in AI research growing exponentially across the board.\n\nHowever, this intensive financial commitment to AI research is not without rationale. Were these companies to neglect this crucial investment, they risk obsolescence in an increasingly automated global economy. The data demonstrates that top-tier firms view investment in AI research as a non-negotiable pillar for innovation, from enhancing consumer platforms to pioneering autonomous systems. In essence, this strategic expenditure is fundamental to securing long-term market leadership.\n\nIn conclusion, the chart unequivocally shows a powerful, upward trend in investment in AI research among China's tech leaders. This pattern strongly suggests that AI is no longer a peripheral interest but the core engine of their business evolution. The sustained commitment of capital confirms that investment in AI research will remain a definitive feature of the corporate landscape for the foreseeable future.",
+  "category": "chart",
+  "difficulty": "high",
+  "strategy": "template",
+  "word_count": 275,
+  "manual_score": null,
+  "tags": [
+    "template",
+    "high",
+    "chart"
+  ],
+  "generated_at": "2026-06-19T17:27:59.612253"
+}
