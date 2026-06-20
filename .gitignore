@@ -36,9 +36,6 @@ ENV/
 Thumbs.db
 
 # Data (large files)
-data/manual_scores_batch*.json
-data/manual_scores_complete.json
-data/results/agent_scores.json
 data/figures/*.png
 data/essays/txt/*.txt
 
@@ -57,3 +54,7 @@ aes-bench-plan.md
 AUDIT.md
 # Pytest
 .pytest_cache/
+
+# Demo data (committed for out-of-box experience)
+# data/manual_scores_*.json  # included
+# data/results/agent_scores.json  # included
