@@ -9,7 +9,7 @@ project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, project_root)
 
 from core.dataset import Dataset
-from scorers.llm_scorer import LLMScorer
+from core.scorers import LLMScorer
 
 def run():
     print('=' * 60)
@@ -33,7 +33,7 @@ def run():
             result['difficulty'] = essay.difficulty
             result['strategy'] = essay.strategy
             results.append(result)
-            print('       Score: %d' % result['score'])
+            print('       Score: %d' % result['overall'])
         except Exception as e:
             print('       Error: %s' % e)
             results.append({

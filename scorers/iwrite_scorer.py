@@ -54,6 +54,12 @@ class IwriteScorer(Scorer):
         return result
     
     def _submit_via_browser(self, essay: Essay) -> Dict:
+        try:
+            from playwright.sync_api import sync_playwright
+        except ImportError:
+            print("  [!] playwright not installed")
+            return self._manual_submission_prompt(essay)
+
         """
         通过浏览器自动化提交作文
         

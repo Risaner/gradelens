@@ -27,9 +27,8 @@ def run_all(output_dir=None, provider="deepseek"):
     
     if not essays:
         print("No essays found. Generating...")
-        from scripts.generate_essays_full import generate_all
-        total, failed = generate_all(output_dir)
-        essays = Dataset(output_dir).load_all()
+        print("No essays found.")
+        return []
     
     print(f"Loaded {len(essays)} essays")
     print(ds.get_summary())

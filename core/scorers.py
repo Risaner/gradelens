@@ -55,9 +55,9 @@ Return ONLY valid JSON, no markdown, no explanation:
     def score(self, essay: Essay) -> Dict:
         """Score an Essay object. Returns dict with language/content/structure/technical/overall/feedback."""
         content = essay.content
-        prompt = essay.prompt if hasattr(essay, 'prompt') else ""
-        difficulty = essay.difficulty if hasattr(essay, 'difficulty') else "medium"
-        strategy = essay.strategy if hasattr(essay, 'strategy') else "natural"
+        prompt = essay.prompt
+        difficulty = essay.difficulty
+        strategy = essay.strategy
 
         try:
             response = self.client.chat.completions.create(
@@ -70,17 +70,28 @@ Return ONLY valid JSON, no markdown, no explanation:
                 max_tokens=500,
             )
             result_text = response.choices[0].message.content.strip()
-            for prefix in ["Here is", "Sure", "OK", "Below"]:
-                if result_text.startswith(prefix):
-                    first_brace = result_text.find("{")
-                    if first_brace > 0:
-                        result_text = result_text[first_brace:]
-            return json.loads(result_text)
+            return self._parse_score_json(result_text)
         except Exception as e:
             return {
                 "language": 0, "content": 0, "structure": 0, "technical": 0,
                 "overall": 0, "feedback": f"Error: {e}", "error": True
             }
+
+    @staticmethod
+    def _parse_score_json(text: str) -> Dict:
+        """Parse LLM output, handling markdown code blocks and prefixes."""
+        import re
+        # Strip markdown code blocks
+        text = re.sub(r"```(?:json)?\s*", "", text)
+        text = re.sub(r"```", "", text)
+        text = text.strip()
+        # Strip common prefixes
+        for prefix in ["Here is", "Sure", "OK", "Below"]:
+            if text.startswith(prefix):
+                first_brace = text.find("{")
+                if first_brace > 0:
+                    text = text[first_brace:]
+        return json.loads(text)
 
     def score_raw(self, content: str, prompt: str = "", difficulty: str = "medium", strategy: str = "natural") -> Dict:
         """Score raw essay content (backward-compatible interface for CLI/scripts)."""
@@ -95,12 +106,7 @@ Return ONLY valid JSON, no markdown, no explanation:
                 max_tokens=500,
             )
             result_text = response.choices[0].message.content.strip()
-            for prefix in ["Here is", "Sure", "OK", "Below"]:
-                if result_text.startswith(prefix):
-                    first_brace = result_text.find("{")
-                    if first_brace > 0:
-                        result_text = result_text[first_brace:]
-            return json.loads(result_text)
+            return self._parse_score_json(result_text)
         except Exception as e:
             return {
                 "language": 0, "content": 0, "structure": 0, "technical": 0,

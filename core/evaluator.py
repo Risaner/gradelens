@@ -4,45 +4,52 @@ class Evaluator:
 
     @staticmethod
     def quadratic_weighted_kappa(predicted: List[float], actual: List[float],
-                                  num_stars: int = 5) -> float:
+                                  num_ratings: int = 5) -> float:
+        """Standard QWK: kappa = 1 - sum(w*O) / sum(w*E)"""
         n = len(predicted)
         if n == 0:
             return 0.0
 
-        def to_stars(scores, min_s, max_s):
-            if max_s == min_s:
-                return [0] * len(scores)
-            return [max(0, min(num_stars - 1, int((s - min_s) / (max_s - min_s) * num_stars)))
+        # Discretize scores into rating bins
+        all_scores = predicted + actual
+        min_s, max_s = min(all_scores), max(all_scores)
+        if max_s == min_s:
+            return 1.0
+
+        def to_bins(scores):
+            return [min(num_ratings - 1, max(0, int((s - min_s) / (max_s - min_s) * num_ratings)))
                     for s in scores]
 
-        pred_stars = to_stars(predicted, min(predicted), max(predicted))
-        actual_stars = to_stars(actual, min(actual), max(actual))
+        pred_bins = to_bins(predicted)
+        actual_bins = to_bins(actual)
 
-        confusion = [[0] * num_stars for _ in range(num_stars)]
-        for p, a in zip(pred_stars, actual_stars):
+        # Build confusion matrix
+        confusion = [[0] * num_ratings for _ in range(num_ratings)]
+        for p, a in zip(pred_bins, actual_bins):
             confusion[p][a] += 1
 
-        total = sum(sum(row) for row in confusion)
-        if total == 0:
-            return 0.0
+        # Weight matrix: w_ij = (i - j)^2
+        weight = [[(i - j) ** 2 for j in range(num_ratings)] for i in range(num_ratings)]
 
+        # Row and column totals
         row_totals = [sum(row) for row in confusion]
-        col_totals = [sum(confusion[i][j] for i in range(num_stars)) for j in range(num_stars)]
+        col_totals = [sum(confusion[i][j] for i in range(num_ratings)) for j in range(num_ratings)]
 
-        expected_weight = 0
-        for i in range(num_stars):
-            for j in range(num_stars):
-                expected_weight += (i - j) ** 2 * row_totals[i] * col_totals[j]
+        # Expected matrix: E_ij = row_total_i * col_total_j / n
+        expected = [[row_totals[i] * col_totals[j] / n for j in range(num_ratings)]
+                    for i in range(num_ratings)]
 
-        observed_weight = 0
-        for i in range(num_stars):
-            for j in range(num_stars):
-                observed_weight += (i - j) ** 2 * confusion[i][j]
+        # QWK = 1 - sum(w*O) / sum(w*E)
+        observed_weight = sum(weight[i][j] * confusion[i][j]
+                              for i in range(num_ratings) for j in range(num_ratings))
+        expected_weight = sum(weight[i][j] * expected[i][j]
+                              for i in range(num_ratings) for j in range(num_ratings))
 
         if expected_weight == 0:
             return 1.0 if observed_weight == 0 else 0.0
 
-        return round(1 - (1 - observed_weight / total) / (1 - expected_weight / total), 4)
+        kappa = 1.0 - observed_weight / expected_weight
+        return round(max(-1.0, min(1.0, kappa)), 4)
 
     @staticmethod
     def pearson_correlation(x: List[float], y: List[float]) -> float:

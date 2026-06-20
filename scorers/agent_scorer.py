@@ -6,11 +6,13 @@ import json
 import os
 import subprocess
 import sys
+from core.base import Scorer
 from typing import Any, Dict, Optional
 
 
-class AgentScorer:
+class AgentScorer(Scorer):
     def __init__(self, timeout: int = 120):
+        super().__init__("Agent")
         self.timeout = timeout
 
     def _build_prompt(self, essay: Dict[str, Any]) -> str:
@@ -24,7 +26,9 @@ class AgentScorer:
             f"Content: {essay['content']}"
         )
 
-    def score(self, essay: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+    def score(self, essay):
+        if hasattr(essay, '__dataclass_fields__'):
+            essay = {k: getattr(essay, k) for k in ['id','title','prompt','content','category','difficulty','strategy','word_count']}
         prompt = self._build_prompt(essay)
         try:
             result = subprocess.run(
