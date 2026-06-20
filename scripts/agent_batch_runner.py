@@ -53,11 +53,10 @@ def run():
     
     from collections import Counter
     scores = [e.get("overall", 0) for e in existing["essays"] if e.get("overall") is not None]
-    if scores:
-        strats = Counter(e.get("strategy", "unknown") for e in existing["essays"])
-        print(f"\nDone! Total: {len(existing[chr(39)+chr(39)])}".replace(chr(39)+chr(39), "essays"))
-        print(f"Score range: {min(scores)}-{max(scores)}, avg: {sum(scores)/len(scores):.1f}")
-        print(f"By strategy: {dict(strats)}")
+    if not scores:
+        print("\nDone! No valid scores.")
+        return
+    strats = Counter(e.get("strategy", "unknown") for e in existing["essays"])
     print(f"\nDone! Total: {len(existing['essays'])}")
     print(f"Score range: {min(scores)}-{max(scores)}, avg: {sum(scores)/len(scores):.1f}")
     print(f"By strategy: {dict(strats)}")

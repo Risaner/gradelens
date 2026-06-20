@@ -26,7 +26,6 @@ def run_all(output_dir=None, provider="deepseek"):
     essays = ds.load_all()
     
     if not essays:
-        print("No essays found. Generating...")
         print("No essays found.")
         return []
     

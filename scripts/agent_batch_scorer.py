@@ -42,7 +42,7 @@ def run():
                 'category': essay.category,
                 'difficulty': essay.difficulty,
                 'strategy': essay.strategy,
-                'score': 0,
+                'overall': 0,
                 'dimensions': {'language': 0, 'content': 0, 'structure': 0, 'technical': 0},
                 'feedback': 'Error: %s' % str(e),
                 'errors': [],
@@ -57,7 +57,7 @@ def run():
     print('Saved %d results to %s' % (len(results), output_file))
     
     if results:
-        scores = [r['score'] for r in results]
+        scores = [r.get('overall', 0) for r in results]
         print('Average score: %.1f' % (sum(scores)/len(scores)))
         print('Max: %d, Min: %d' % (max(scores), min(scores)))
         

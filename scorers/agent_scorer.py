@@ -45,4 +45,4 @@ class AgentScorer(Scorer):
                 return score
         except Exception:
             pass
-        return None
+        return {"language": 0, "content": 0, "structure": 0, "technical": 0, "overall": 0, "feedback": "Agent scoring failed", "essay_id": essay.get("id", "unknown")}

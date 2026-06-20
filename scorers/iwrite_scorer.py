@@ -54,22 +54,12 @@ class IwriteScorer(Scorer):
         return result
     
     def _submit_via_browser(self, essay: Essay) -> Dict:
+        """Submit essay via browser automation."""
         try:
             from playwright.sync_api import sync_playwright
         except ImportError:
             print("  [!] playwright not installed")
             return self._manual_submission_prompt(essay)
-
-        """
-        通过浏览器自动化提交作文
-        
-        步骤:
-        1. 打开iWrite登录页
-        2. 如果有cookies则自动登录，否则提示手动登录
-        3. 找到"快速体验"入口
-        4. 粘贴作文内容并提交
-        5. 提取评分结果
-        """
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             context = browser.new_context()

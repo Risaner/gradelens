@@ -18,8 +18,6 @@ class Essay:
     tags: List[str] = field(default_factory=list)
 
     def __post_init__(self):
-        if self.tags is None:
-            self.tags = []
         if self.word_count == 0:
             self.word_count = len(self.content.split())
 
