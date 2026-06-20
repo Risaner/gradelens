@@ -1,30 +1,30 @@
-﻿# Contribution Guidelines
+﻿# 贡献指南
 
-## How to Contribute
+## 如何贡献
 
-1. **Report issues** — Found a bug or have a suggestion? Open an issue.
-2. **Submit PRs** — Fork the repo, create a feature branch, submit a PR.
-3. **Improve documentation** — Typo fixes, better examples, translations welcome.
+1. **报告问题** — 发现 bug 或有建议？创建 Issue。
+2. **提交 PR** — Fork 仓库，创建功能分支，提交 PR。
+3. **改进文档** — 修复错别字、补充示例、翻译都欢迎。
 
-## Code Style
+## 代码规范
 
-- Python: Follow [PEP 8](https://peps.python.org/pep-0008/)
-- Commit messages: [Conventional Commits](https://www.conventionalcommits.org/)
-  - eat:, ix:, docs:, efactor:, 	est:, chore:
+- Python: 遵循 [PEP 8](https://peps.python.org/pep-0008/)
+- 提交信息: [Conventional Commits](https://www.conventionalcommits.org/)
+  - eat:、ix:、docs:、efactor:、	est:、chore:
 
 ## Issues
 
-- Use issue templates
-- Label with: ug, enhancement, documentation, good first issue
+- 使用 Issue 模板
+- 标签：ug、enhancement、documentation、good first issue
 
 ## Pull Requests
 
-1. Fork and clone
-2. Create branch: git checkout -b feat/your-feature
-3. Commit: git commit -m "feat: your description"
-4. Push: git push origin feat/your-feature
-5. Open PR with description of changes
+1. Fork 并克隆
+2. 创建分支：git checkout -b feat/你的功能
+3. 提交：git commit -m "feat: 描述"
+4. 推送：git push origin feat/你的功能
+5. 提交 PR，描述改动内容
 
-## License
+## 许可证
 
-By contributing, you agree your contributions will be licensed under the MIT License.
+贡献即表示同意你的贡献以 MIT 许可证发布。

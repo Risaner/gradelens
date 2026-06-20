@@ -1,62 +1,71 @@
-﻿# AES-Bench: Agent Evaluation Score Benchmark
+﻿# AES-Bench：AI 作文评分偏差基准测试
 
-**Quantifying the bias between AI essay scorers (iWrite / Pigai) and human-accurate evaluation.**
+**量化 AI 作文评分系统（iWrite / 批改网）与人工评分之间的偏差。**
 
 ---
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CET-4/6](https://img.shields.io/badge/CET-4%2F6-666.svg)]()
+## 项目简介
 
-## Overview
+AES-Bench 是一个基准数据集和分析框架，用于衡量 **AI 作文评分系统（iWrite / 批改网 PIGAI）相对于高质量人工评分的偏差。**
 
-AES-Bench is a benchmark dataset and analysis framework for measuring **scoring bias in AI essay scoring systems** (iWrite / 批改网 PIGAI) compared to high-quality manual evaluation.
+本项目使用 48 篇 AI 生成的 CET-4/6 英语作文，涵盖 7 种写作策略，来回答：
 
-It uses 48 AI-generated CET-4/6 English essays across 7 writing strategies to answer: **Do AI scorers over-reward template essays and under-reward poor writing?**
+> **AI 评分系统是否会过度偏袒模板作文，而低估低质量作文？**
 
-### Key Finding
+### 核心发现
 
-| Strategy | Agent vs Manual Gap | Interpretation |
-|---|---|---|
-| natural | -0.5 | Fair — no bias |
-| template | +1.9 | Fair — slight preference |
-| poor | -24.7 | Agent severely under-scores |
-| barely_pass | -10.0 | Agent under-scores |
-| chenglish | -19.5 | Agent under-scores |
+| 策略 | Agent vs 人工 偏差 | 含义 |
+|------|-------------------|------|
+| natural（自然写作） | -0.5 | 基本一致 — 无偏差 |
+| template（模板写作） | +1.9 | 基本一致 — 轻微偏好 |
+| poor（差文） | -24.7 | Agent 严重低估 |
+| barely_pass（勉强通过） | -10.0 | Agent 低估 |
+| chenglish（中英混合） | -19.5 | Agent 低估 |
 
-**Overall:** Agent scoring shows -2.0 average gap with manual, **contradicting** the assumption that "AI always favors templates."
+**总体结论：** Agent 评分平均比人工低 2 分，**与"AI 必然偏袒模板"的假设矛盾**。
 
-## Dataset
+---
 
-- **48 essays** across 4 categories and 3 difficulty levels
-- 7 writing strategies: natural, template, poor, barely_pass, chenglish, over_optimized, chinese_writing
+## 数据集
 
-| Category | Count | Difficulty |
-|---|---|---|
-| Argumentative | 23 | High: 36 / Medium: 5 / Low: 7 |
-| Chart | 10 | |
-| News | 9 | |
-| Mixed | 6 | |
+- **48 篇作文**，涵盖 4 种文体、3 个难度等级
+- 7 种写作策略：natural、template、poor、barely_pass、chenglish、over_optimized、chinese_writing
 
-## Installation
+| 类别 | 数量 | 难度分布 |
+|------|------|---------|
+| 议论文 (argumentative) | 23 | 高难度：36 / 中等：5 / 低：7 |
+| 图表 (chart) | 10 | |
+| 新闻 (news) | 9 | |
+| 混合 (mixed) | 6 | |
+
+## 评分标准（CET-4/6）
+
+四个维度各 0-25 分，满分 100：
+
+| 维度 | 权重 | 含义 |
+|------|------|------|
+| **语言** | 25 | 语法准确性、词汇范围、句式多样性 |
+| **内容** | 25 | 切题度、论证深度、例证使用 |
+| **结构** | 25 | 段落组织、过渡词、头尾完整 |
+| **技术** | 25 | 拼写、标点、格式、字数合规 |
+
+## 快速开始
 
 `ash
-# Clone the repo
+# 克隆仓库
 git clone https://github.com/Risaner/aes-bench.git
 cd aes-bench
 
-# Install dependencies
+# 安装依赖
 pip install -r requirements.txt
 `
 
-## Usage
-
-### Quick start — check agent scores
+### 查看已完成的 Agent 评分
 
 `python
 import json
 
-# Load agent scores (already scored)
+# 加载已评分数据
 with open("data/results/agent_scores.json", encoding="utf-8") as f:
     data = json.load(f)
 
@@ -64,93 +73,71 @@ for essay in data["essays"][:5]:
     print(f"{essay['essay_id']}: {essay['overall']}/100")
 `
 
-### Run agent scoring pipeline
+### 运行 Agent 评分
 
 `ash
-# Score all essays using Agent (via hermes CLI)
+# 用 Agent 批量评分
 python scripts/agent_batch_runner.py
 
-# Run gap analysis against manual scores
+# 运行偏差分析
 python scripts/run_gap_analysis.py
 `
 
-### Analysis
+### 编程式使用
 
 `python
 from core.dataset import Dataset
 from core.evaluator import Evaluator
 
+# 加载数据
 ds = Dataset("data")
 essays = ds.load_all()
 
-# Access individual essays
+# 访问单篇作文
 for essay in essays:
-    print(f"{essay.id}: {essay.strategy}, {essay.difficulty}, {essay.word_count} words")
+    print(f"{essay.id}: {essay.strategy}, {essay.difficulty}, {essay.word_count} 词")
 
-# Evaluation metrics
+# 评估指标
 evaluator = Evaluator()
 qwk = evaluator.quadratic_weighted_kappa(...)
 pcc = evaluator.pearson_correlation(...)
 `
 
-## Project Structure
+## 项目结构
 
 `
 aes-bench/
-├── core/                   # Core modules
-│   ├── dataset.py          # Essay dataclass + Dataset loader
-│   ├── scorer_registry.py  # Scorer registry (agent, iwrite, llm)
-│   ├── scorers.py          # LLMScorer base class
-│   ├── scorers_iwrite.py   # iWrite browser automation
-│   └── evaluator.py        # QWK, PCC, RMSE metrics
-├── scorers/                # Scorer implementations
-│   ├── __init__.py
-│   ├── agent_scorer.py     # ★ Agent-based scorer (hermes chat)
-│   ├── llm_scorer.py       # OpenAI-based scorer (placeholder)
-│   ├── iwrite_scorer.py    # iWrite browser automation
-│   └── pigai_scorer.py     # PIGAI API wrapper
+├── core/                   # 核心模块
+│   ├── dataset.py          # Essay 数据类 + 数据加载器
+│   ├── scorer_registry.py  # 评分器注册表
+│   ├── scorers.py          # LLMScorer 基类
+│   ├── scorer_registry.py  # 注册表（agent, iwrite, llm）
+│   ├── scorers_iwrite.py   # iWrite 浏览器自动化
+│   └── evaluator.py        # QWK、PCC、RMSE 指标
+├── scorers/                # 评分器实现
+│   ├── agent_scorer.py     # ★ Agent 评分器（hermes chat）
+│   ├── llm_scorer.py       # OpenAI 评分器
+│   ├── iwrite_scorer.py    # iWrite 浏览器自动化
+│   └── pigai_scorer.py     # 批改网 API
 ├── scripts/
-│   ├── agent_batch_runner.py    # Batch agent scoring
-│   └── run_gap_analysis.py      # Gap analysis vs manual scores
+│   ├── agent_batch_runner.py    # Agent 批量评分
+│   └── run_gap_analysis.py      # 偏差分析
 ├── data/
-│   ├── essays/              # 48 essays (JSON + TXT)
-│   ├── results/             # Agent scores
-│   ├── analysis/            # Gap analysis report
-│   ├── figures/             # Visualization PNGs
-│   └── manual_scores_*.json # Manual evaluation ground truth
-├── pyproject.toml           # Package config
-├── requirements.txt         # Dependencies
-└── README.md                # This file
+│   ├── essays/              # 48 篇作文（JSON + TXT）
+│   ├── results/             # Agent 评分结果
+│   ├── analysis/            # 偏差分析报告
+│   ├── figures/             # 可视化图表
+│   └── manual_scores_*.json # 人工评分基准
+├── pyproject.toml           # 项目配置
+├── requirements.txt         # 依赖
+├── .gitignore
+└── README.md
 `
 
-## Methodology
+## 偏差分析方法
 
-### Essay Generation
-48 AI essays were generated using diverse writing strategies:
-- **natural**: Fluent, natural writing with varied structure
-- **template**: Heavy use of CET templates (Firstly, Moreover, In conclusion)
-- **poor**: Intentionally low-quality with grammar errors
-- **barely_pass**: Minimal effort, barely meeting requirements
-- **chenglish**: English sentences mixed with Chinese
-- **over_optimized**: Over-polished, template-heavy
-- **chinese_writing**: Written in Chinese (not English)
+偏差 = Agent 评分 - 人工评分。正值表示 Agent 给分更高。
 
-### Scoring Criteria (CET-4/6)
-Each dimension scored 0-25, total 0-100:
-1. **Language**: Grammar, vocabulary range, sentence variety
-2. **Content**: Relevance, argument depth, examples
-3. **Structure**: Paragraph organization, transitions, intro/body/conclusion
-4. **Technical**: Spelling, punctuation, formatting, word count
+## 许可证
 
-### Gap Analysis
-Gap = Agent Score - Manual Score. Positive = Agent scores higher than manual.
-
-## Results
-
-Full analysis in data/analysis/agent_gap_report.md.
-
-Score distributions and gap charts in data/figures/.
-
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.
+MIT 许可证。详见 [LICENSE](LICENSE)。
